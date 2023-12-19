@@ -1,3 +1,1 @@
-## E-Commerce App
-
-- [Project Link](https://bit.ly/fs-ecommerce)
+Ecommerce website with nextjs, tailwind and sanity
