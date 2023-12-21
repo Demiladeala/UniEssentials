@@ -9,9 +9,9 @@ import { ProductGrid } from "@/components/product-grid"
 import { ProductSort } from "@/components/product-sort"
 import { seedSanityData } from "@/lib/seed"
 import SiteHero from "../components/site-hero"
-import Promotion from "../components/promotion"
-import Banner from "../components/banner"
-import Gutter from "../components/gutter"       
+import Promotion from "../components/Promotion"
+import Banner from "../components/Banner"
+import Gutter from "../components/Gutter"       
 
 interface Props {
   searchParams: {
