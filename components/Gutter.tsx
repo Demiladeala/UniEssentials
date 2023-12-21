@@ -1,5 +1,5 @@
 import React from 'react'
-import GutterDetails from './gutter-details'
+import GutterDetails from './GutterDetails'
 import shipping from 'public/shipping.svg'
 import dollar from 'public/dollar.svg'
 import support from 'public/support.svg'
