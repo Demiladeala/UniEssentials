@@ -10,7 +10,7 @@ import logo6 from '../public/logo6.png'
 
 type Props = {}
 
-const Bannercomp = (props: Props) => {
+const Banner = (props: Props) => {
   return (
   <div className='w-full py-5 bg-gray-300 banner'>
     <Marquee pauseOnHover>
@@ -68,4 +68,4 @@ const Bannercomp = (props: Props) => {
   )
 }
 
-export default Bannercomp
+export default Banner

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react"
 
 type Props = {}
 
-const Promotioncomp = (props: Props) => {
+const Promotion = (props: Props) => {
     const [time, setTime] = useState({
         days: 0,
         hours: 0,
@@ -69,4 +69,4 @@ const StatBox = ({ label, value }: { label: string; value: number }) => (
     </li>
   )
 
-export default Promotioncomp
+export default Promotion

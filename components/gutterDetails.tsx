@@ -11,7 +11,7 @@ type Props = {
     desc?: string
 }
 
-const GutterDetails = ({ src, name, desc }: Props) => {
+const Gutter = ({ src, name, desc }: Props) => {
   return (
     <div >
         <Image 
@@ -25,4 +25,4 @@ const GutterDetails = ({ src, name, desc }: Props) => {
   )
 }
 
-export default GutterDetails
+export default Gutter

@@ -66,7 +66,7 @@ export function SiteHeader() {
               ) :
               (
                 <>
-                <Link href='/login'>
+                <Link href='/sign-in'>
                   <Button className="ml-2 max-[280px]:hidden" size="sm" variant='default'>
                     <p>LOGIN</p>
                   </Button>

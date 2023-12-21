@@ -9,9 +9,9 @@ import { ProductGrid } from "@/components/product-grid"
 import { ProductSort } from "@/components/product-sort"
 import { seedSanityData } from "@/lib/seed"
 import SiteHero from "../components/site-hero"
-import Promotioncomp from "@/components/promotion"
-import Guttercomp from "@/components/gutter"
-import Bannercomp from "@/components/banner"
+import Promotion from "../components/promotion"
+import Banner from "../components/banner"
+import Gutter from "../components/gutter"       
 
 interface Props {
   searchParams: {
@@ -86,15 +86,15 @@ export default async function Page({ searchParams }: Props) {
       </div>
 
       <section className="w-full">
-        <Promotioncomp />
+        <Promotion />
       </section>
 
       <section className="mt-8 md:mt-28 w-full">
-        <Bannercomp />
+        <Banner />
       </section>
 
       <section className="w-full mt-[5rem] mb-[2rem] lg:mt-[7rem] lg:mb-[5rem]">
-        <Guttercomp />
+        <Gutter />
       </section>
 
     </div>
