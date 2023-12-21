@@ -43,11 +43,11 @@ const Promotion = (props: Props) => {
     <section className="px-7">
       <div className="">
         <h3 className="text-lg font-semibold lg:text-2xl">Deals of the Month</h3>
-        <div className="w-full flex gap-8 flex-col lg:flex-row max-lg:mt-5 mt-7 ">
-        <p className="text-lg md:text-xl lg:basis-[50%] ">
+        <div className="w-full flex gap-8 flex-col lg:flex-row max-lg:mt-5 mt-7">
+        <p className="text-lg md:text-xl lg:basis-[50%]">
           Get ready for a shopping experience like never before with our Deals of the Month! Every
           purchase comes with exclusive perks and offers, making this month a celebration of savvy
-          choices and amazing deals. Don't miss out! 🎁🛒
+          choices and amazing deals. Don&apos;t miss out! 🎁🛒
         </p>
 
         <ul className="grid grid-cols-2 gap-[20px] lg:basis-[50%]">
