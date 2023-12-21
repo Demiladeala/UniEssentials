@@ -5,7 +5,7 @@ import dollar from 'public/dollar.svg'
 import support from 'public/support.svg'
 import payment from 'public/payment.svg'
 
-const Gutter = () => {
+const Guttercomp = () => {
   return (
     <div className='grid gap-7 grid-cols-1 md:grid-cols-2 px-7'>
         <GutterDetails src={shipping} name='Free Shipping' desc='Free shipping for orders above $150'/>
@@ -16,4 +16,4 @@ const Gutter = () => {
   )
 }
 
-export default Gutter
+export default Guttercomp
