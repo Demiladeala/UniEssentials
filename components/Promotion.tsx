@@ -36,7 +36,7 @@ const Promotion = (props: Props) => {
         return () => {
           clearInterval(timerInterval) // Cleanup the interval when the component unmounts.
         }
-      }, [])
+      }, [targetDate])
 
 
   return (
