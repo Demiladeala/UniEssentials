@@ -67,6 +67,18 @@
     --ring: 216 34% 17%;
 
     --radius: 0.5rem;
+    .hero-bg{ 
+      background-color: #ddd;
+    }
+    .banner{
+      background-color: #efefef;
+    }
+    .gutter{
+      color: #ccc;
+    }
+    .gutterImg{
+      filter: invert(100%)
+    }
   }
 }
 
@@ -77,5 +89,29 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  .hero-bg{
+    background-color: #f3f3f3;
+    background-image: url('../public/hero.png');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+  }
+  @media(max-width:765px) {
+    .hero-bg{
+      background-image: url('../public/hero-tablet.png');
+    }
+  }
+  @media(max-width:640px) {
+    .hero-bg{
+      background-image: url('../public/hero-mobile.png');
+      background-size: cover;
+      object-fit: cover;
+    }
   }
 }

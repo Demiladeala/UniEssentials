@@ -8,6 +8,10 @@ import { ProductFilters } from "@/components/product-filters"
 import { ProductGrid } from "@/components/product-grid"
 import { ProductSort } from "@/components/product-sort"
 import { seedSanityData } from "@/lib/seed"
+import SiteHero from "../components/SiteHero"
+import Promotion from "../components/Promotion"
+import Gutter from "../components/Gutter"
+import Banner from "../components/Banner"
 
 interface Props {
   searchParams: {
@@ -50,10 +54,10 @@ export default async function Page({ searchParams }: Props) {
 
   return (
     <div>
-      <div className="px-4 pt-20 text-center">
-        <h1 className="text-4xl font-extrabold tracking-normal">{siteConfig.name}</h1>
-        <p className="mx-auto mt-4 max-w-3xl text-base">{siteConfig.description}</p>
-      </div>
+      <section className="w-full">
+        <SiteHero />
+      </section>
+
       <div>
         <main className="mx-auto max-w-6xl px-6">
           <div className="flex items-center justify-between border-b border-gray-200 pb-4 pt-24 dark:border-gray-800">
@@ -66,7 +70,7 @@ export default async function Page({ searchParams }: Props) {
 
           <section aria-labelledby="products-heading" className="pb-24 pt-6">
             <h2 id="products-heading" className="sr-only">
-              Products
+              Product
             </h2>
             <div className={cn("grid grid-cols-1 gap-x-8 gap-y-10", products.length > 0 ?
             'lg:grid-cols-4' : 'lg:grid-cols-[1fr_3fr]')}>
@@ -80,6 +84,19 @@ export default async function Page({ searchParams }: Props) {
           </section>
         </main>
       </div>
+
+      <section className="w-full">
+        <Promotion />
+      </section>
+
+      <section className="mt-8 md:mt-28 w-full">
+        <Banner />
+      </section>
+
+      <section className="w-full mt-[5rem] mb-[2rem] lg:mt-[7rem] lg:mb-[5rem]">
+        <Gutter />
+      </section>
+
     </div>
   )
 }
